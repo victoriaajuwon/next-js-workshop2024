@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+.Page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 1400px;
+  padding: 1em;
+  margin: 0 auto;
+
+  & > h1 {
+    margin: 1em 0;
+    align-self: flex-start;
+  }
+}
+
+.HomePage {
+  justify-content: center;
+}
+
+.AlbumPage,
+.AlbumEditPage {
+  & > header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 1em;
+  }
+}
+
+.NewAlbumPage {
+  form {
+    width: 100%;
+    max-width: 80ch;
+    display: flex;
+    gap: 1em;
+
+    input {
+      font-weight: 700;
+      font-size: 1.25em;
+      padding: 0.25em 0.5em;
+      width: 100%;
+    }
+    button {
+      padding: 0.5em 1em;
+      border: none;
+    }
+  }
+}
